@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'BLUIKit_Example' do
+  pod 'BLUIKit', :path => '../'
+
+  target 'BLUIKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

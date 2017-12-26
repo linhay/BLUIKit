@@ -1,0 +1,6 @@
+framework module BLUIKit {
+  umbrella header "BLUIKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

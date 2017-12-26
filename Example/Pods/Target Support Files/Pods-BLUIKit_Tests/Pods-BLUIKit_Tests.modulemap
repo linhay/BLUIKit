@@ -1,0 +1,6 @@
+framework module Pods_BLUIKit_Tests {
+  umbrella header "Pods-BLUIKit_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
