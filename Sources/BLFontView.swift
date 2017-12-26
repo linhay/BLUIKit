@@ -47,8 +47,13 @@ open class BLFontView: UIView {
     }
   }
 
+  open override func layoutSubviews() {
+    super.layoutSubviews()
+    adjustIconFont()
+  }
 
   private func adjustIconFont() {
+    guard bounds.size.width != 0, bounds.size.height != 0 else{ return }
     guard fontScale > 0 else { return }
     guard fontSize >= 0 else { return }
     guard !fontName.isEmpty else { return }
@@ -65,18 +70,18 @@ open class BLFontView: UIView {
     guard let unicode = getInt(from: fontUnicode) else { return }
     guard let iconName = UnicodeScalar(unicode)?.description else { return }
 
-    UIGraphicsBeginImageContext(contextSize)
-    guard let context = UIGraphicsGetCurrentContext() else {
+      UIGraphicsBeginImageContext(contextSize)
+      guard let context = UIGraphicsGetCurrentContext() else {
+        UIGraphicsEndImageContext()
+        return
+      }
+      (iconName as NSString).draw(at: point,
+                                  withAttributes: [.foregroundColor : fontColor,
+                                                   .font: font])
+      if let cgImage = context.makeImage() {
+        layer.contents = cgImage
+      }
       UIGraphicsEndImageContext()
-      return
-    }
-    (iconName as NSString).draw(at: point,
-                                withAttributes: [.foregroundColor : fontColor,
-                                                 .font: font])
-    if let cgImage = context.makeImage() {
-      layer.contents = cgImage
-    }
-    UIGraphicsEndImageContext()
   }
 
   /// 从16进制字符串/或者单字符 获取Int类型
