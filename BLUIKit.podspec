@@ -6,7 +6,7 @@ s.summary          = '自定义UI组件'
 s.homepage         = 'https://github.com/bigL055/BLUIKit.git'
 s.license          = { :type => 'MIT', :file => 'LICENSE' }
 s.author           = { 'linger' => 'linhan.bigl055@outlook.com' }
-s.source           = { :git => 'git@github.com:bigL055/BLUIKit.git', :tag => s.version.to_s }
+s.source           = { :git => 'https://github.com/bigL055/BLUIKit.git', :tag => s.version.to_s }
 
 s.ios.deployment_target = '8.0'
 # s.public_header_files = 'Sources/*.h'
