@@ -9,7 +9,7 @@ s.author           = { 'linger' => 'linhan.bigl055@outlook.com' }
 s.source           = { :git => 'git@github.com:bigL055/BLUIKit.git', :tag => s.version.to_s }
 
 s.ios.deployment_target = '8.0'
-s.public_header_files = 'Sources/*.h'
+# s.public_header_files = 'Sources/*.h'
 s.source_files = ['Sources/*/**','Sources/**']
 s.frameworks = 'UIKit'
 
