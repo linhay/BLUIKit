@@ -14,11 +14,18 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		9D2F0FC01FF1F87500515DB1 /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9D2F0FBF1FF1F87500515DB1 /* iconfont.ttf */; };
 		9D2F0FC21FF1FD5200515DB1 /* BLFontViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2F0FC11FF1FD5200515DB1 /* BLFontViewController.swift */; };
+		CD127542205B790100CB6A49 /* gif.gif in Resources */ = {isa = PBXBuildFile; fileRef = CD127541205B790100CB6A49 /* gif.gif */; };
+		CD127546205B795900CB6A49 /* jpg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD127544205B795900CB6A49 /* jpg.jpg */; };
+		CD127549205BA19C00CB6A49 /* BLImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD127547205BA19C00CB6A49 /* BLImageCell.swift */; };
+		CD12754A205BA19C00CB6A49 /* BLImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD127548205BA19C00CB6A49 /* BLImageCell.xib */; };
+		CD12754C205BA7D900CB6A49 /* svg.svg in Resources */ = {isa = PBXBuildFile; fileRef = CD12754B205BA7D900CB6A49 /* svg.svg */; };
+		CD12754E205BA9D500CB6A49 /* apng.apng in Resources */ = {isa = PBXBuildFile; fileRef = CD12754D205BA9D500CB6A49 /* apng.apng */; };
+		CD5E1F662057C00000015FB7 /* BLImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5E1F652057C00000015FB7 /* BLImageViewController.swift */; };
 		D6613412076AB9A006784E92 /* Pods_BLUIKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DF62C5E828844D1A5D52BBE /* Pods_BLUIKit_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5253F2F296DFF8162555D375 /* BLUIKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = BLUIKit.podspec; path = ../BLUIKit.podspec; sourceTree = "<group>"; };
+		5253F2F296DFF8162555D375 /* BLUIKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = BLUIKit.podspec; path = ../BLUIKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		607FACD01AFB9204008FA782 /* BLUIKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BLUIKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -34,6 +41,13 @@
 		9DD7246E1144D4ED6A1E92B0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		B96B03F4AB93F0713D11480E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		BF204A16FCAA1C36229B3BEA /* Pods-BLUIKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BLUIKit_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BLUIKit_Tests/Pods-BLUIKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		CD127541205B790100CB6A49 /* gif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gif.gif; sourceTree = "<group>"; };
+		CD127544205B795900CB6A49 /* jpg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jpg.jpg; sourceTree = "<group>"; };
+		CD127547205BA19C00CB6A49 /* BLImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLImageCell.swift; sourceTree = "<group>"; };
+		CD127548205BA19C00CB6A49 /* BLImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BLImageCell.xib; sourceTree = "<group>"; };
+		CD12754B205BA7D900CB6A49 /* svg.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = svg.svg; sourceTree = "<group>"; };
+		CD12754D205BA9D500CB6A49 /* apng.apng */ = {isa = PBXFileReference; lastKnownFileType = file; path = apng.apng; sourceTree = "<group>"; };
+		CD5E1F652057C00000015FB7 /* BLImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLImageViewController.swift; sourceTree = "<group>"; };
 		D16E456BDD2712547302A9E8 /* Pods-BLUIKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BLUIKit_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BLUIKit_Example/Pods-BLUIKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		FA78C6A1C278C7CA530BA4D9 /* Pods-BLUIKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BLUIKit_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-BLUIKit_Example/Pods-BLUIKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -95,11 +109,18 @@
 				9D2F0FBF1FF1F87500515DB1 /* iconfont.ttf */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				CD127544205B795900CB6A49 /* jpg.jpg */,
+				CD127541205B790100CB6A49 /* gif.gif */,
+				CD12754B205BA7D900CB6A49 /* svg.svg */,
+				CD12754D205BA9D500CB6A49 /* apng.apng */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 				9D2F0FC11FF1FD5200515DB1 /* BLFontViewController.swift */,
+				CD5E1F652057C00000015FB7 /* BLImageViewController.swift */,
+				CD127547205BA19C00CB6A49 /* BLImageCell.swift */,
+				CD127548205BA19C00CB6A49 /* BLImageCell.xib */,
 			);
 			name = "Example for BLUIKit";
 			path = BLUIKit;
@@ -187,9 +208,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D2F0FC01FF1F87500515DB1 /* iconfont.ttf in Resources */,
+				CD127546205B795900CB6A49 /* jpg.jpg in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
+				CD12754C205BA7D900CB6A49 /* svg.svg in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				CD12754E205BA9D500CB6A49 /* apng.apng in Resources */,
+				CD12754A205BA19C00CB6A49 /* BLImageCell.xib in Resources */,
+				CD127542205B790100CB6A49 /* gif.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,7 +282,9 @@
 			files = (
 				9D2F0FC21FF1FD5200515DB1 /* BLFontViewController.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				CD5E1F662057C00000015FB7 /* BLImageViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				CD127549205BA19C00CB6A49 /* BLImageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
