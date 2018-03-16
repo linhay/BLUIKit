@@ -10,7 +10,11 @@ import MobileCoreServices
 
 open class BLImageView: UIImageView {
   
-  init(data: Data) {
+  public init() {
+    super.init(image: nil)
+  }
+  
+  public init(data: Data) {
     super.init(image: nil)
     play(data: data)
   }

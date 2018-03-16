@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name             = 'BLUIKit'
-s.version          = '0.1.3'
+s.version          = '0.1.4'
 s.summary          = '自定义UI组件'
 
 s.homepage         = 'https://github.com/bigL055/BLUIKit.git'
