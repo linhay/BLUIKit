@@ -21,8 +21,9 @@ pod 'BLUIKit'
 
 ## Author
 
-Linger, linhan.bigl055@outlook.com
+linhey, linhan.bigl055@outlook.com
 
 ## License
 
 BLUIKit is available under the MIT license. See the LICENSE file for more info.
+
