@@ -5,8 +5,6 @@
 [![License](https://img.shields.io/cocoapods/l/BLUIKit.svg?style=flat)](http://cocoapods.org/pods/BLUIKit)
 [![Platform](https://img.shields.io/cocoapods/p/BLUIKit.svg?style=flat)](http://cocoapods.org/pods/BLUIKit)
 
-
-
 ## Installation
 
 BLUIKit is available through [CocoaPods](http://cocoapods.org). To install
