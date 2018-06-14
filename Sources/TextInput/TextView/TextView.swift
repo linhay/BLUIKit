@@ -75,13 +75,6 @@ public class TextView: UITextView,TextInputProtocol {
     get{ return placeholderLabel.text }
   }
   
-  override open func canPerformAction(_ action: Selector, withSender sender: Any?) -> Bool {
-    if canPerformAction(self, text: text, action: action) {
-      return super.canPerformAction(action, withSender: sender)
-    }
-    return false
-  }
-  
   public override init(frame: CGRect, textContainer: NSTextContainer?) {
     super.init(frame: frame, textContainer: textContainer)
     buildConfig()
@@ -94,6 +87,13 @@ public class TextView: UITextView,TextInputProtocol {
   public override func awakeFromNib() {
     super.awakeFromNib()
     buildConfig()
+  }
+  
+  override open func canPerformAction(_ action: Selector, withSender sender: Any?) -> Bool {
+    if canPerformAction(self, text: text, action: action) {
+      return super.canPerformAction(action, withSender: sender)
+    }
+    return false
   }
   
   public func textInput(overWordLimit text: String) {
