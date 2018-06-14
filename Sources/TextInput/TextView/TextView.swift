@@ -76,7 +76,7 @@ public class TextView: UITextView,TextInputProtocol {
   }
   
   override open func canPerformAction(_ action: Selector, withSender sender: Any?) -> Bool {
-    if canPerformAction(self, action: action) {
+    if canPerformAction(self, text: text, action: action) {
       return super.canPerformAction(action, withSender: sender)
     }
     return false
@@ -94,6 +94,10 @@ public class TextView: UITextView,TextInputProtocol {
   public override func awakeFromNib() {
     super.awakeFromNib()
     buildConfig()
+  }
+  
+  public func textInput(overWordLimit text: String) {
+    
   }
   
   //MARK: - Deinitialized
@@ -126,7 +130,7 @@ extension TextView {
   @objc private func textView(changed not: Notification) {
     guard let input = not.object as? TextView, self == input else { return }
     textDidChange(input: input, text: input.text, lastText: lastText) { (res) in
-      input.text = res
+      if res != input.text { input.text = res }
       lastText = res
     }
   }

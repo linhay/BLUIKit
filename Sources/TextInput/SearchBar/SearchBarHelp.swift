@@ -34,7 +34,7 @@ public class SearchBarHelp: TextInputDelegate, UISearchBarDelegate {
     textInputDelegate?.searchBar(searchBar, textDidChange: searchText)
     guard let searchBar = searchBar as? SearchBar, let input = searchBar.searchField else { return }
     searchBar.textDidChange(input: input, text: input.text ?? "", lastText: searchBar.lastText) { (res) in
-      searchBar.text = res
+      if res != searchBar.text { searchBar.text = res }
       searchBar.lastText = res
     }
   }

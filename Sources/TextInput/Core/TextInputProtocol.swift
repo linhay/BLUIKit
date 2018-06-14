@@ -53,7 +53,8 @@ public struct TextInputMatch {
   }
 }
 
-public protocol TextInputProtocol {
+
+public protocol TextInputProtocol: NSObjectProtocol {
   /// 文字过滤与转换
   var filters: [TextInputFilter] { set get }
   /// 判断输入是否合法的
@@ -62,6 +63,11 @@ public protocol TextInputProtocol {
   var wordLimit: Int { set get }
   /// 菜单禁用项
   var disables: [TextInputDisableState] { set get }
+  
+  /// 超过字数限制
+  ///
+  /// - Parameter text: 超过的字符串
+  func textInput(overWordLimit text: String)
 }
 
 public extension TextInputProtocol {
@@ -73,7 +79,7 @@ public extension TextInputProtocol {
   ///   - text: 插入字符
   ///   - range: 插入字符范围
   /// - Returns: 处理后文本
- public func getAfterInputText(string: String,text: String,range: NSRange) -> String {
+  public func getAfterInputText(string: String,text: String,range: NSRange) -> String {
     var result = string
     // 删除操作
     switch text.isEmpty {
@@ -137,25 +143,26 @@ public extension TextInputProtocol {
         break
       }
     }
-    guard let start = input.position(from: input.beginningOfDocument, offset: result2.count + offset) else{ return }
+    
+    if offset >= 0 {
+      input.selectedTextRange = range
+      return
+    }
+    let preStr = result2[...String.Index(encodedOffset: result2.count + offset)]
+    
+    guard let start = input.position(from: input.beginningOfDocument, offset: preStr.utf16.count) else{ return }
     input.selectedTextRange = input.textRange(from: start, to: start)
   }
-    
- public func shouldChange(input: UITextInput, range: NSRange, string: String) -> Bool {
+  
+  public func shouldChange(input: UITextInput, range: NSRange, string: String) -> Bool {
+    if string.isEmpty { return true }
     guard input.markedTextRange == nil,
       let allRange = input.textRange(from: input.beginningOfDocument,
-                                   to: input.endOfDocument),
+                                     to: input.endOfDocument),
       let text = input.text(in: allRange) else { return true }
-    
     let inputStr = filter(text: string)
     let endStr = getAfterInputText(string: text, text: string, range: range)
-    if !match(text: endStr) {
-      // 防止提前设置非法text导致无法删除
-      if !match(text: endStr) {
-        input.replace(allRange, withText: endStr)
-      }
-      return false
-    }
+    if !match(text: endStr) { return false }
     
     // 处理第三方键盘候选词输入/粘贴
     if inputStr != string,range.length != 0 { return false }
@@ -170,8 +177,11 @@ public extension TextInputProtocol {
   ///
   /// - Parameter text: 待判断文本
   /// - Returns: 结构
- public func match(text: String) -> Bool {
-    if text.count > wordLimit { return false }
+  public func match(text: String) -> Bool {
+    if text.count > wordLimit {
+      textInput(overWordLimit: text)
+      return false
+    }
     for item in matchs {
       if !item.code(text) { return false }
     }
@@ -185,7 +195,7 @@ public extension TextInputProtocol {
   ///
   /// - Parameter text: 待过滤文本
   /// - Returns: 过滤后文本
- public func filter(text: String) -> String {
+  public func filter(text: String) -> String {
     var text = text
     for item in filters {
       text = item.code(text)
@@ -198,10 +208,15 @@ public extension TextInputProtocol {
   ///
   /// - Parameter text: 待过滤文本
   /// - Returns: 过滤后文本
- public func filter(limit text: String) -> String {
+  public func filter(limit text: String) -> String {
     if wordLimit == Int.max { return text }
-    let endIndex = String.Index.init(encodedOffset: wordLimit)
-    return text.count > wordLimit ? String(text[text.startIndex..<endIndex]) : text
+    let endIndex = String.Index(encodedOffset: wordLimit)
+    if text.count > wordLimit{
+      textInput(overWordLimit: text)
+      return String(text[text.startIndex..<endIndex])
+    }
+    
+    return text
   }
   
 }
@@ -213,14 +228,25 @@ public extension TextInputProtocol {
   ///   - respoder: textView & textfield
   ///   - action: 执行方法名
   /// - Returns: 是否响应
- public func canPerformAction(_ respoder: UIResponder, action: Selector) -> Bool {
+  public func canPerformAction(_ respoder: UIResponder,text: String, action: Selector) -> Bool {
     if disables.contains(.all) { return false }
-    if disables.contains(.cut), action == #selector(respoder.cut(_:)) { return false }
-    if disables.contains(.copy), action == #selector(respoder.copy(_:)) { return false }
-    if disables.contains(.paste), action == #selector(respoder.paste(_:)) { return false }
-    if disables.contains(.select), action == #selector(respoder.select(_:)) { return false }
-    if disables.contains(.selectAll), action == #selector(respoder.selectAll(_:)) { return false }
-    if disables.contains(.delete), action == #selector(respoder.delete(_:)) { return false }
-    return true
+    switch action {
+    case #selector(respoder.cut(_:)):
+      return !disables.contains(.cut)
+    case #selector(respoder.copy(_:)):
+      return !disables.contains(.copy)
+    case #selector(respoder.paste(_:)):
+      if let str = UIPasteboard.general.string {
+        return !disables.contains(.paste) && (str.count + text.count) <= wordLimit
+      }
+      return !disables.contains(.paste)
+    case #selector(respoder.select(_:)):
+      return !disables.contains(.select)
+    case #selector(respoder.selectAll(_:)):
+      return !disables.contains(.selectAll)
+    case #selector(respoder.delete(_:)):
+      return !disables.contains(.delete)
+    default: return true
+    }
   }
 }

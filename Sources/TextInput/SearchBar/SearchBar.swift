@@ -50,6 +50,17 @@ public class SearchBar: UISearchBar,TextInputProtocol {
     buildConfig()
   }
   
+  public override func canPerformAction(_ action: Selector, withSender sender: Any?) -> Bool {
+    if canPerformAction(self, text: text ?? "", action: action) {
+      return super.canPerformAction(action, withSender: sender)
+    }
+    return false
+  }
+  
+  public func textInput(overWordLimit text: String) {
+    
+  }
+  
 }
 
 /// MARK: - Config

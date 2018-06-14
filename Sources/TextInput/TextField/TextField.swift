@@ -44,7 +44,7 @@ open class TextField: UITextField,TextInputProtocol {
   }
   
   override open func canPerformAction(_ action: Selector, withSender sender: Any?) -> Bool {
-    if canPerformAction(self, action: action) {
+    if canPerformAction(self, text: text ?? "", action: action) {
       return super.canPerformAction(action, withSender: sender)
     }
     return false
@@ -62,6 +62,10 @@ open class TextField: UITextField,TextInputProtocol {
   open override func awakeFromNib() {
     super.awakeFromNib()
     buildConfig()
+  }
+  
+  public func textInput(overWordLimit text: String) {
+    
   }
   
   open override func drawPlaceholder(in rect: CGRect) {
@@ -124,7 +128,7 @@ extension TextField {
   @objc private func textField(changed not: Notification) {
     guard let input = not.object as? TextField, self == input else { return }
     textDidChange(input: input, text: input.text ?? "", lastText: lastText) { (res) in
-      input.text = res
+      if res != input.text { input.text = res }
       lastText = res
     }
   }
