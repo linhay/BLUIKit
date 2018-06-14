@@ -9,18 +9,8 @@
 /* Begin PBXBuildFile section */
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
-		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		9D2F0FC01FF1F87500515DB1 /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9D2F0FBF1FF1F87500515DB1 /* iconfont.ttf */; };
-		9D2F0FC21FF1FD5200515DB1 /* BLFontViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2F0FC11FF1FD5200515DB1 /* BLFontViewController.swift */; };
-		CD127542205B790100CB6A49 /* gif.gif in Resources */ = {isa = PBXBuildFile; fileRef = CD127541205B790100CB6A49 /* gif.gif */; };
-		CD127546205B795900CB6A49 /* jpg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD127544205B795900CB6A49 /* jpg.jpg */; };
-		CD127549205BA19C00CB6A49 /* BLImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD127547205BA19C00CB6A49 /* BLImageCell.swift */; };
-		CD12754A205BA19C00CB6A49 /* BLImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD127548205BA19C00CB6A49 /* BLImageCell.xib */; };
-		CD12754C205BA7D900CB6A49 /* svg.svg in Resources */ = {isa = PBXBuildFile; fileRef = CD12754B205BA7D900CB6A49 /* svg.svg */; };
-		CD12754E205BA9D500CB6A49 /* apng.apng in Resources */ = {isa = PBXBuildFile; fileRef = CD12754D205BA9D500CB6A49 /* apng.apng */; };
-		CD5E1F662057C00000015FB7 /* BLImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5E1F652057C00000015FB7 /* BLImageViewController.swift */; };
 		D6613412076AB9A006784E92 /* Pods_BLUIKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DF62C5E828844D1A5D52BBE /* Pods_BLUIKit_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,24 +20,14 @@
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		6DF62C5E828844D1A5D52BBE /* Pods_BLUIKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BLUIKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		89D82256EF67592BABB03D80 /* Pods-BLUIKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BLUIKit_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BLUIKit_Tests/Pods-BLUIKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		95A3BA4080252B929C725A2F /* Pods_BLUIKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BLUIKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D2F0FBF1FF1F87500515DB1 /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.ttf; sourceTree = "<group>"; };
-		9D2F0FC11FF1FD5200515DB1 /* BLFontViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLFontViewController.swift; sourceTree = "<group>"; };
 		9DD7246E1144D4ED6A1E92B0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		B96B03F4AB93F0713D11480E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		BF204A16FCAA1C36229B3BEA /* Pods-BLUIKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BLUIKit_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BLUIKit_Tests/Pods-BLUIKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		CD127541205B790100CB6A49 /* gif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gif.gif; sourceTree = "<group>"; };
-		CD127544205B795900CB6A49 /* jpg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jpg.jpg; sourceTree = "<group>"; };
-		CD127547205BA19C00CB6A49 /* BLImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLImageCell.swift; sourceTree = "<group>"; };
-		CD127548205BA19C00CB6A49 /* BLImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BLImageCell.xib; sourceTree = "<group>"; };
-		CD12754B205BA7D900CB6A49 /* svg.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = svg.svg; sourceTree = "<group>"; };
-		CD12754D205BA9D500CB6A49 /* apng.apng */ = {isa = PBXFileReference; lastKnownFileType = file; path = apng.apng; sourceTree = "<group>"; };
-		CD5E1F652057C00000015FB7 /* BLImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLImageViewController.swift; sourceTree = "<group>"; };
 		D16E456BDD2712547302A9E8 /* Pods-BLUIKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BLUIKit_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BLUIKit_Example/Pods-BLUIKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		FA78C6A1C278C7CA530BA4D9 /* Pods-BLUIKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BLUIKit_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-BLUIKit_Example/Pods-BLUIKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -106,21 +86,11 @@
 		607FACD21AFB9204008FA782 /* Example for BLUIKit */ = {
 			isa = PBXGroup;
 			children = (
-				9D2F0FBF1FF1F87500515DB1 /* iconfont.ttf */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				CD127544205B795900CB6A49 /* jpg.jpg */,
-				CD127541205B790100CB6A49 /* gif.gif */,
-				CD12754B205BA7D900CB6A49 /* svg.svg */,
-				CD12754D205BA9D500CB6A49 /* apng.apng */,
-				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
-				9D2F0FC11FF1FD5200515DB1 /* BLFontViewController.swift */,
-				CD5E1F652057C00000015FB7 /* BLImageViewController.swift */,
-				CD127547205BA19C00CB6A49 /* BLImageCell.swift */,
-				CD127548205BA19C00CB6A49 /* BLImageCell.xib */,
 			);
 			name = "Example for BLUIKit";
 			path = BLUIKit;
@@ -156,7 +126,6 @@
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				0DA690B106F5DDD1C4DDB35A /* [CP] Embed Pods Frameworks */,
-				DF0328EE2399F2568AA5E4C1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -174,7 +143,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
@@ -207,15 +176,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D2F0FC01FF1F87500515DB1 /* iconfont.ttf in Resources */,
-				CD127546205B795900CB6A49 /* jpg.jpg in Resources */,
-				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
-				CD12754C205BA7D900CB6A49 /* svg.svg in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
-				CD12754E205BA9D500CB6A49 /* apng.apng in Resources */,
-				CD12754A205BA19C00CB6A49 /* BLImageCell.xib in Resources */,
-				CD127542205B790100CB6A49 /* gif.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,21 +220,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DF0328EE2399F2568AA5E4C1 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BLUIKit_Example/Pods-BLUIKit_Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -280,25 +227,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D2F0FC21FF1FD5200515DB1 /* BLFontViewController.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
-				CD5E1F662057C00000015FB7 /* BLImageViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
-				CD127549205BA19C00CB6A49 /* BLImageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		607FACD91AFB9204008FA782 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				607FACDA1AFB9204008FA782 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		607FACDE1AFB9204008FA782 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -322,12 +258,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -360,6 +298,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -375,12 +314,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -405,6 +346,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -422,6 +364,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -438,6 +381,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

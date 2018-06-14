@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  BLUIKit
 //
-//  Created by 158179948@qq.com on 10/28/2017.
-//  Copyright (c) 2017 158179948@qq.com. All rights reserved.
+//  Created by linhey on 10/28/2017.
+//  Copyright (c) 2017 linhey. All rights reserved.
 //
 
 import UIKit
@@ -16,6 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+      window = UIWindow(frame: UIScreen.main.bounds)
+      
+      window?.rootViewController = UINavigationController(rootViewController: ViewController())
+      window?.makeKeyAndVisible()
         return true
     }
 
