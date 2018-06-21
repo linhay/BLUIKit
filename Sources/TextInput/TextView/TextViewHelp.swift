@@ -48,6 +48,7 @@ class TextViewHelp: TextInputDelegate, UITextViewDelegate {
     textInputDelegate?.textViewDidChange?(textView)
   }
   
+  //选中textView 或者输入内容的时候调用
   @available(iOS 2.0, *)
   public func textViewDidChangeSelection(_ textView: UITextView){
     textInputDelegate?.textViewDidChangeSelection?(textView)

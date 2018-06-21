@@ -8,15 +8,16 @@
 import UIKit
 
 public class TextView: UITextView,TextInputProtocol {
-  
-  /// 文字过滤与转换
-  public var filters: [TextInputFilter] = []
-  /// 判断输入是否合法的
-  public var matchs: [TextInputMatch] = []
-  /// 菜单禁用项
-  public var disables: [TextInputDisableState] = []
   /// 字数限制
-  public var wordLimit = Int.max
+  public var wordLimit: Int = TextInputConfig.wordLimit
+  /// 文字超出字符限制执行
+  public var overWordLimitEvent: ((String) -> ())? = TextInputConfig.overWordLimitEvent
+  /// 文字过滤与转换
+  public var filters: [TextInputFilter] = TextInputConfig.filters
+  /// 判断输入是否合法的
+  public var matchs: [TextInputMatch] = TextInputConfig.matchs
+  /// 菜单禁用项
+  public var disables: [TextInputDisableState] = TextInputConfig.disables
   
   private var inputHelp: TextViewHelp?
   
@@ -96,10 +97,6 @@ public class TextView: UITextView,TextInputProtocol {
     return false
   }
   
-  public func textInput(overWordLimit text: String) {
-    
-  }
-  
   //MARK: - Deinitialized
   deinit {
     NotificationCenter.default.removeObserver(self)
@@ -112,9 +109,6 @@ extension TextView{
   
   func buildConfig() {
     delegate = nil
-    matchs = TextInputConfig.matchs
-    filters = TextInputConfig.filters
-    disables = TextInputConfig.disables
     buildNotifications()
   }
   

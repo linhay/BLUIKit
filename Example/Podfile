@@ -2,4 +2,5 @@ use_frameworks!
 
 target 'BLUIKit_Example' do
   pod 'BLUIKit', :path => '../'
+  pod 'SHCHUD'
 end

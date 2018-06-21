@@ -10,9 +10,15 @@ PODS:
   - BLUIKit/TextInput/SearchBar (0.2.0)
   - BLUIKit/TextInput/TextField (0.2.0)
   - BLUIKit/TextInput/TextView (0.2.0)
+  - SHCHUD (1.1.7)
 
 DEPENDENCIES:
   - BLUIKit (from `../`)
+  - SHCHUD
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - SHCHUD
 
 EXTERNAL SOURCES:
   BLUIKit:
@@ -20,7 +26,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   BLUIKit: ace5adf9abf6bbcbde09a417411dcf31fc8c1e7f
+  SHCHUD: f5a83cc96285b06308e34266af00365931c99547
 
-PODFILE CHECKSUM: 29924f185b9d23a6af786d4c78b15c9e97bbe40c
+PODFILE CHECKSUM: c890cbe8808103e576b531095f095be7e0b84bb8
 
 COCOAPODS: 1.5.2

@@ -8,8 +8,9 @@
 
 import UIKit
 import BLUIKit
+import SHCHUD
 
-class ViewController: UIViewController {
+class TextInputViewController: UIViewController {
   
   lazy var textField: TextField = {
     let item = TextField()
@@ -43,9 +44,14 @@ class ViewController: UIViewController {
     TextInputConfig.filters = [TextInputFilter(rule: { (item) -> String in
       return item.replacingOccurrences(of: "[\\笑脸]", with: "😁")
     })]
+    
+    TextInputConfig.overWordLimitEvent = { (text) in
+      HUD.show(string: text)
+    }
+    
     view.backgroundColor = .white
     textField.wordLimit = 30
-    textView.wordLimit = 200
+    textView.wordLimit = 50
     searchBar.backgroundColor = UIColor.white
   }
   

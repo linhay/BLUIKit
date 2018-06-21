@@ -63,11 +63,8 @@ public protocol TextInputProtocol: NSObjectProtocol {
   var wordLimit: Int { set get }
   /// 菜单禁用项
   var disables: [TextInputDisableState] { set get }
-  
   /// 超过字数限制
-  ///
-  /// - Parameter text: 超过的字符串
-  func textInput(overWordLimit text: String)
+  var overWordLimitEvent: ((_ text: String)->())? { set get }
 }
 
 public extension TextInputProtocol {
@@ -149,7 +146,7 @@ public extension TextInputProtocol {
       return
     }
     let preStr = result2[...String.Index(encodedOffset: result2.count + offset)]
-    
+    /// utf16: emoji 字符为 utf8
     guard let start = input.position(from: input.beginningOfDocument, offset: preStr.utf16.count) else{ return }
     input.selectedTextRange = input.textRange(from: start, to: start)
   }
@@ -163,7 +160,8 @@ public extension TextInputProtocol {
     let inputStr = filter(text: string)
     let endStr = getAfterInputText(string: text, text: string, range: range)
     if !match(text: endStr) { return false }
-    
+    // 处理字符限制
+    if endStr.count > wordLimit { return false }
     // 处理第三方键盘候选词输入/粘贴
     if inputStr != string,range.length != 0 { return false }
     return true
@@ -179,7 +177,7 @@ public extension TextInputProtocol {
   /// - Returns: 结构
   public func match(text: String) -> Bool {
     if text.count > wordLimit {
-      textInput(overWordLimit: text)
+      overWordLimitEvent?(text)
       return false
     }
     for item in matchs {
@@ -212,7 +210,7 @@ public extension TextInputProtocol {
     if wordLimit == Int.max { return text }
     let endIndex = String.Index(encodedOffset: wordLimit)
     if text.count > wordLimit{
-      textInput(overWordLimit: text)
+      overWordLimitEvent?(text)
       return String(text[text.startIndex..<endIndex])
     }
     
@@ -231,21 +229,17 @@ public extension TextInputProtocol {
   public func canPerformAction(_ respoder: UIResponder,text: String, action: Selector) -> Bool {
     if disables.contains(.all) { return false }
     switch action {
-    case #selector(respoder.cut(_:)):
-      return !disables.contains(.cut)
-    case #selector(respoder.copy(_:)):
-      return !disables.contains(.copy)
+    case #selector(respoder.cut(_:)): return !disables.contains(.cut)
+    case #selector(respoder.copy(_:)): return !disables.contains(.copy)
     case #selector(respoder.paste(_:)):
+      /// 处理剪切板粘贴超过字符限制
       if let str = UIPasteboard.general.string {
         return !disables.contains(.paste) && (str.count + text.count) <= wordLimit
       }
       return !disables.contains(.paste)
-    case #selector(respoder.select(_:)):
-      return !disables.contains(.select)
-    case #selector(respoder.selectAll(_:)):
-      return !disables.contains(.selectAll)
-    case #selector(respoder.delete(_:)):
-      return !disables.contains(.delete)
+    case #selector(respoder.select(_:)): return !disables.contains(.select)
+    case #selector(respoder.selectAll(_:)): return !disables.contains(.selectAll)
+    case #selector(respoder.delete(_:)): return !disables.contains(.delete)
     default: return true
     }
   }

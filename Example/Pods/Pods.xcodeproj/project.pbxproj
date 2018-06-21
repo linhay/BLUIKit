@@ -7,26 +7,62 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		058D60D20BDE0F1CE2E7E9F94170AEA6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
 		0C3EC12F4C930C4954D1347AB2043D78 /* TextInputDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F58DCBE0C6D7C2F5A742994D86E6340D /* TextInputDelegate.swift */; };
 		0FFD572780B68C5EDF35B0230D8CE43B /* BLUIKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F2E556CC400F8A77720137242BC795C8 /* BLUIKit-dummy.m */; };
-		130CE11C2EBA163B7D0C007978CEB9DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
 		154765423A8AA88267128FDCC420A5C0 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D15186ACD13B4081BA0490DF7C7475EF /* SearchBar.swift */; };
-		4ED00A932A62DDAA6E412A52066373E9 /* Pods-BLUIKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B958B13063746A74EC50BAEEBBA6663E /* Pods-BLUIKit_Example-dummy.m */; };
+		192F903E133B6310AB212F85DB4C7DFC /* rotation@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 841A14FC477B6E56497F3CF00CE97EA2 /* rotation@3x.png */; };
+		204030FD257B89AF855EA61A7F8D83E3 /* angle-mask@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = A40C16159098BA03B5E6397689DDB9C5 /* angle-mask@3x.png */; };
+		283A9AD66F5FEF42F07A0F817C93C2E5 /* SHCHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B2ADE3819FD06B6B22E8CBA16CFD44 /* SHCHUD.swift */; };
+		2E4839E888E6487CCA1B5C858A98704A /* Photo.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 70B07218DCD1A11E95E2E585C1E2876A /* Photo.bundle */; };
+		3053534E1AD516753C788C12C8C02259 /* warning.png in Resources */ = {isa = PBXBuildFile; fileRef = C6274B330CA6A4E694F95094C70AF653 /* warning.png */; };
+		38936FEAD914852DB3B9C568F4223C52 /* error@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D71F70587E88509D06E5DE51B77AD833 /* error@3x.png */; };
+		39A64D9BACBB4D750E752068D24E6C09 /* rotation.png in Resources */ = {isa = PBXBuildFile; fileRef = DC353C4ECEE9CAB9423B71A064D86D68 /* rotation.png */; };
+		3F5FDED3518C8F92D66D90B929797FEA /* SHCHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 65853A502FCED73A1D56A025F70295C8 /* SHCHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		468129768889BA18D96BE447A89004D3 /* warning@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 46E16772618B2C13A6E377E75611E6F5 /* warning@3x.png */; };
+		4E680B47169D16BE51048B7D42A3856A /* error@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7327630A0028B72F068FC4B3D8991790 /* error@2x.png */; };
 		51EFACAAAF1EAD72A5AEB7148654F46A /* BLUIKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B94C8F9B7BBDC7C48F330CC25DDB7AE2 /* BLUIKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		52545968B3732009DA80456C346C0F0A /* angle-mask@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AD40D561DC0E3F1623AB41944653045 /* angle-mask@2x.png */; };
+		5260ACC9B88796C5F266DC760BDF28F4 /* SHCHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B8C851A340C03D0B467D08CDE85CED03 /* SHCHUD-dummy.m */; };
+		576614C890F9D66448000CDED8FBDE30 /* success@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CC66F9FDB4E898FAA553F671CA338048 /* success@3x.png */; };
 		6DEEFE9B2BE72B27D1255D26D4544C7B /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1109E2BAE1F771AAE1487C94B11F402 /* TextView.swift */; };
 		6F6ED7ADC7BC383D1B5E68DEE3DD747B /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCF70774301400B9A60A6657D673FC6D /* TextField.swift */; };
 		7261AFB3199EB55A67C387FE644D193B /* TextFieldHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D219057828DF99BF17A571F125DA3622 /* TextFieldHelp.swift */; };
+		73A096C0EA5384A577B18061E54C6CE4 /* success@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C438C7D1ED3E0EABFB93DD373C8AFF26 /* success@2x.png */; };
 		8197ECBFA4DDF713676D20BEE6EAA7B2 /* TextInputProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00089D9198B8DC9929492768EEB8F0B5 /* TextInputProtocol.swift */; };
+		8D29822F8B582A1A055EAC14D2D294E1 /* success.png in Resources */ = {isa = PBXBuildFile; fileRef = 2929B3A8D0775AFBC2A04BE3D4284FC3 /* success.png */; };
+		94D1202DA57F57B8D747CCE798F0F850 /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C179ED2C8CD8C671CCD5AAC6689307 /* HUD.swift */; };
+		9A2CF3F0C309A95CB27B8D8A2056FF7C /* angle-mask.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E96BED09DE17082C7B6F582916A00CF /* angle-mask.png */; };
+		A812CA06F2E37670F57B419EEBE33A36 /* error.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AD5F9B6BA180C053060658EEE7C13CE /* error.png */; };
 		AAD6034E8D9D586A3E43BDE49878D91C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
+		B65CE7EE4DF503EC0F433632EF8E71E6 /* Pods-BLUIKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 870A7EA9627DB11BCC947ECA80C62257 /* Pods-BLUIKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BAFA0104C51DB70BAD2A392887834EE6 /* HUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 18D2371972A82E1FF11C78B34B669C26 /* HUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BBCCF3E9BA6130553F12A23D08D7CBA0 /* TextViewHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19544335285957D84FE3B63186D5006E /* TextViewHelp.swift */; };
 		BBF65ADA9F438BD51A5FF6C3A02236D8 /* SearchBarHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EECE881FD3FE803FC91A063A5876B9F /* SearchBarHelp.swift */; };
-		D366AAF4877B86690F5CF69B597A8E64 /* Pods-BLUIKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 870A7EA9627DB11BCC947ECA80C62257 /* Pods-BLUIKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C6F7E96767009227FC1899F9E798C022 /* Pods-BLUIKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B958B13063746A74EC50BAEEBBA6663E /* Pods-BLUIKit_Example-dummy.m */; };
+		DE5D043537CF013A71F155F18C371ECC /* warning@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 37C85196BFFE9A7DC8B61A401A1651CF /* warning@2x.png */; };
+		E8D290B13F13739EF6944CE67F6514DE /* rotation@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C0FE702F205F054630DD1498CA257943 /* rotation@2x.png */; };
 		E92FC31DBFAC37FCFB04AA6E37F60A09 /* TextInputConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E7179ACA7E0A5D2670BDBB36F067AB /* TextInputConfig.swift */; };
+		F583559E6A7CBCF578C9A1ED888B3256 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
 		FD2459BE09F4DC62E494B5AE8CCF25A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		F8C73237C5F73954DA04AFD6415A3F4F /* PBXContainerItemProxy */ = {
+		8817E5A0E50F5A46A2FE20E47F49F3B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8699FF12FB07E19993B83E0D55C581C2;
+			remoteInfo = "SHCHUD-Photo";
+		};
+		C90CAE7603694C9A9DB5B1CEE7930120 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3082E084D9CC623934E41E3DB78488AA;
+			remoteInfo = SHCHUD;
+		};
+		F3E13BE3C1019F5E3699B3E1F5D36131 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -37,34 +73,61 @@
 
 /* Begin PBXFileReference section */
 		00089D9198B8DC9929492768EEB8F0B5 /* TextInputProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextInputProtocol.swift; path = Sources/TextInput/Core/TextInputProtocol.swift; sourceTree = "<group>"; };
-		0B90D6C77D87F3108A164AE8CDD7A57A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		0B90D6C77D87F3108A164AE8CDD7A57A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		10145AF44824ED07A3F18DE61460F46E /* SHCHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SHCHUD.modulemap; sourceTree = "<group>"; };
 		10488D5334B061A258D2199ED8FCD871 /* Pods-BLUIKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BLUIKit_Example-frameworks.sh"; sourceTree = "<group>"; };
+		18D2371972A82E1FF11C78B34B669C26 /* HUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HUD.h; path = SHCHUD/HUD.h; sourceTree = "<group>"; };
 		19544335285957D84FE3B63186D5006E /* TextViewHelp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextViewHelp.swift; path = Sources/TextInput/TextView/TextViewHelp.swift; sourceTree = "<group>"; };
 		1E3647AC605B3808FD1EB40736A2ABFF /* Pods-BLUIKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BLUIKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		1EECE881FD3FE803FC91A063A5876B9F /* SearchBarHelp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SearchBarHelp.swift; path = Sources/TextInput/SearchBar/SearchBarHelp.swift; sourceTree = "<group>"; };
-		24DC4C72B6BF7FCBA7CCD5240B960980 /* Pods_BLUIKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BLUIKit_Example.framework; path = "Pods-BLUIKit_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2929B3A8D0775AFBC2A04BE3D4284FC3 /* success.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = success.png; path = Photo.bundle/success.png; sourceTree = "<group>"; };
+		2E86982A1FCB10CE1D4E70881C2718E7 /* ResourceBundle-Photo-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-Photo-Info.plist"; sourceTree = "<group>"; };
+		37C85196BFFE9A7DC8B61A401A1651CF /* warning@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "warning@2x.png"; path = "Photo.bundle/warning@2x.png"; sourceTree = "<group>"; };
 		38E7179ACA7E0A5D2670BDBB36F067AB /* TextInputConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextInputConfig.swift; path = Sources/TextInput/Core/TextInputConfig.swift; sourceTree = "<group>"; };
 		3A631523A5918D39ABC76AAA638DCAE5 /* Pods-BLUIKit_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BLUIKit_Example-resources.sh"; sourceTree = "<group>"; };
-		4C480AA5867FF0B9E7F6240E93D500B7 /* BLUIKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = BLUIKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		46E16772618B2C13A6E377E75611E6F5 /* warning@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "warning@3x.png"; path = "Photo.bundle/warning@3x.png"; sourceTree = "<group>"; };
+		4C480AA5867FF0B9E7F6240E93D500B7 /* BLUIKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = BLUIKit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		4E96BED09DE17082C7B6F582916A00CF /* angle-mask.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "angle-mask.png"; path = "Photo.bundle/angle-mask.png"; sourceTree = "<group>"; };
+		581050E9D672762634C93462BD2E95FE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5A40A227016B5C521AC63D3494978B39 /* Pods-BLUIKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BLUIKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		65853A502FCED73A1D56A025F70295C8 /* SHCHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SHCHUD-umbrella.h"; sourceTree = "<group>"; };
+		6CF9F6172C2BD3CC1FCA33CE0F2FEE64 /* SHCHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SHCHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		70B07218DCD1A11E95E2E585C1E2876A /* Photo.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Photo.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		7327630A0028B72F068FC4B3D8991790 /* error@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "error@2x.png"; path = "Photo.bundle/error@2x.png"; sourceTree = "<group>"; };
 		761B16A9D260E86BB31D353A670134AA /* BLUIKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BLUIKit.xcconfig; sourceTree = "<group>"; };
+		79B2ADE3819FD06B6B22E8CBA16CFD44 /* SHCHUD.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SHCHUD.swift; path = SHCHUD/SHCHUD.swift; sourceTree = "<group>"; };
+		7AD5F9B6BA180C053060658EEE7C13CE /* error.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = error.png; path = Photo.bundle/error.png; sourceTree = "<group>"; };
+		7D693648547B4E9FCEFA428B7281F837 /* SHCHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SHCHUD.xcconfig; sourceTree = "<group>"; };
+		841A14FC477B6E56497F3CF00CE97EA2 /* rotation@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "rotation@3x.png"; path = "Photo.bundle/rotation@3x.png"; sourceTree = "<group>"; };
 		865B7B7BA9CC5ACA9FB03B04A85C9ECF /* Pods-BLUIKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BLUIKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		86D000A072088E8C3FA2F0CEA5BFF569 /* Pods-BLUIKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BLUIKit_Example.modulemap"; sourceTree = "<group>"; };
 		870A7EA9627DB11BCC947ECA80C62257 /* Pods-BLUIKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BLUIKit_Example-umbrella.h"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8A572D3F57D232D430738AEEA99BC7A7 /* Pods_BLUIKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BLUIKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AD40D561DC0E3F1623AB41944653045 /* angle-mask@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "angle-mask@2x.png"; path = "Photo.bundle/angle-mask@2x.png"; sourceTree = "<group>"; };
+		91C179ED2C8CD8C671CCD5AAC6689307 /* HUD.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HUD.swift; path = SHCHUD/HUD.swift; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		941A57B6A5AD5DA4E895EED550D6A115 /* BLUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BLUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BE9A703A7B30FEAE61606B4216E99D5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AA826EFC39215F4440BC2109DB0AF920 /* BLUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BLUIKit.framework; path = BLUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A40C16159098BA03B5E6397689DDB9C5 /* angle-mask@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "angle-mask@3x.png"; path = "Photo.bundle/angle-mask@3x.png"; sourceTree = "<group>"; };
 		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		B8C851A340C03D0B467D08CDE85CED03 /* SHCHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SHCHUD-dummy.m"; sourceTree = "<group>"; };
 		B94C8F9B7BBDC7C48F330CC25DDB7AE2 /* BLUIKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BLUIKit-umbrella.h"; sourceTree = "<group>"; };
 		B958B13063746A74EC50BAEEBBA6663E /* Pods-BLUIKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BLUIKit_Example-dummy.m"; sourceTree = "<group>"; };
+		C0FE702F205F054630DD1498CA257943 /* rotation@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "rotation@2x.png"; path = "Photo.bundle/rotation@2x.png"; sourceTree = "<group>"; };
 		C1109E2BAE1F771AAE1487C94B11F402 /* TextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextView.swift; path = Sources/TextInput/TextView/TextView.swift; sourceTree = "<group>"; };
+		C438C7D1ED3E0EABFB93DD373C8AFF26 /* success@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "success@2x.png"; path = "Photo.bundle/success@2x.png"; sourceTree = "<group>"; };
+		C6274B330CA6A4E694F95094C70AF653 /* warning.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = warning.png; path = Photo.bundle/warning.png; sourceTree = "<group>"; };
 		C8AB6B3BE76890ED11405BA6D232284B /* Pods-BLUIKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BLUIKit_Example.release.xcconfig"; sourceTree = "<group>"; };
+		CC66F9FDB4E898FAA553F671CA338048 /* success@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "success@3x.png"; path = "Photo.bundle/success@3x.png"; sourceTree = "<group>"; };
 		CCF70774301400B9A60A6657D673FC6D /* TextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextField.swift; path = Sources/TextInput/TextField/TextField.swift; sourceTree = "<group>"; };
 		D15186ACD13B4081BA0490DF7C7475EF /* SearchBar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SearchBar.swift; path = Sources/TextInput/SearchBar/SearchBar.swift; sourceTree = "<group>"; };
 		D219057828DF99BF17A571F125DA3622 /* TextFieldHelp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextFieldHelp.swift; path = Sources/TextInput/TextField/TextFieldHelp.swift; sourceTree = "<group>"; };
+		D71F70587E88509D06E5DE51B77AD833 /* error@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "error@3x.png"; path = "Photo.bundle/error@3x.png"; sourceTree = "<group>"; };
 		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		DC353C4ECEE9CAB9423B71A064D86D68 /* rotation.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = rotation.png; path = Photo.bundle/rotation.png; sourceTree = "<group>"; };
 		DF5222AA7D375C4058EBA77EAC7D8F61 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E8A496EDB8FA249D6FFDEBDD9391D8C8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		E6BAD6E4D33E4D50259A721819C563AA /* SHCHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SHCHUD-prefix.pch"; sourceTree = "<group>"; };
+		E8A496EDB8FA249D6FFDEBDD9391D8C8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		F2547F7556F963FE6875BCB75F19C759 /* BLUIKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BLUIKit-prefix.pch"; sourceTree = "<group>"; };
 		F2E556CC400F8A77720137242BC795C8 /* BLUIKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BLUIKit-dummy.m"; sourceTree = "<group>"; };
 		F58DCBE0C6D7C2F5A742994D86E6340D /* TextInputDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextInputDelegate.swift; path = Sources/TextInput/Core/TextInputDelegate.swift; sourceTree = "<group>"; };
@@ -72,11 +135,26 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		23BB1B6A684F650A10CC8507BA3BB5F4 /* Frameworks */ = {
+		1A0ABB125408FD5F07A862D1831E8027 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				130CE11C2EBA163B7D0C007978CEB9DB /* Foundation.framework in Frameworks */,
+				058D60D20BDE0F1CE2E7E9F94170AEA6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AB9E502F0350A3779DA2B8ACBD13842 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7EEFFBC94B71008BA6AEF4766F0C17AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F583559E6A7CBCF578C9A1ED888B3256 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +177,28 @@
 				1EECE881FD3FE803FC91A063A5876B9F /* SearchBarHelp.swift */,
 			);
 			name = SearchBar;
+			sourceTree = "<group>";
+		};
+		3B1FB6349D12899D68688E1EFF18D13E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4E96BED09DE17082C7B6F582916A00CF /* angle-mask.png */,
+				8AD40D561DC0E3F1623AB41944653045 /* angle-mask@2x.png */,
+				A40C16159098BA03B5E6397689DDB9C5 /* angle-mask@3x.png */,
+				7AD5F9B6BA180C053060658EEE7C13CE /* error.png */,
+				7327630A0028B72F068FC4B3D8991790 /* error@2x.png */,
+				D71F70587E88509D06E5DE51B77AD833 /* error@3x.png */,
+				DC353C4ECEE9CAB9423B71A064D86D68 /* rotation.png */,
+				C0FE702F205F054630DD1498CA257943 /* rotation@2x.png */,
+				841A14FC477B6E56497F3CF00CE97EA2 /* rotation@3x.png */,
+				2929B3A8D0775AFBC2A04BE3D4284FC3 /* success.png */,
+				C438C7D1ED3E0EABFB93DD373C8AFF26 /* success@2x.png */,
+				CC66F9FDB4E898FAA553F671CA338048 /* success@3x.png */,
+				C6274B330CA6A4E694F95094C70AF653 /* warning.png */,
+				37C85196BFFE9A7DC8B61A401A1651CF /* warning@2x.png */,
+				46E16772618B2C13A6E377E75611E6F5 /* warning@3x.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
@@ -126,6 +226,14 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		531F1EF5303157A4C0D09BC4E6E32C76 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B5E90FDC7BE339C3269C285F7C6C3C3D /* SHCHUD */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6F208AFBDE8354F05A7DC7AAA2475ACE /* TextView */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,7 +249,8 @@
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				C370EE1BE6D44BFA746B34D20C01B3A8 /* Development Pods */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				F332CF43DECCF9668577CAFB5ABC06BB /* Products */,
+				531F1EF5303157A4C0D09BC4E6E32C76 /* Pods */,
+				C4BCDEC11A3A3575398C5E684ED94F74 /* Products */,
 				436BFA6D873EB413F57E83BA1FA83A3F /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -191,6 +300,18 @@
 			path = "Example/Pods/Target Support Files/BLUIKit";
 			sourceTree = "<group>";
 		};
+		B5E90FDC7BE339C3269C285F7C6C3C3D /* SHCHUD */ = {
+			isa = PBXGroup;
+			children = (
+				18D2371972A82E1FF11C78B34B669C26 /* HUD.h */,
+				91C179ED2C8CD8C671CCD5AAC6689307 /* HUD.swift */,
+				79B2ADE3819FD06B6B22E8CBA16CFD44 /* SHCHUD.swift */,
+				3B1FB6349D12899D68688E1EFF18D13E /* Resources */,
+				D0D77575530F93C5AEF91C2CA4EA3DB7 /* Support Files */,
+			);
+			path = SHCHUD;
+			sourceTree = "<group>";
+		};
 		BFA99488EF73D10915E93D5986BD1752 /* TextField */ = {
 			isa = PBXGroup;
 			children = (
@@ -206,6 +327,17 @@
 				936BF3EA29DCCECB508AB6304DB75D10 /* BLUIKit */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		C4BCDEC11A3A3575398C5E684ED94F74 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				941A57B6A5AD5DA4E895EED550D6A115 /* BLUIKit.framework */,
+				70B07218DCD1A11E95E2E585C1E2876A /* Photo.bundle */,
+				8A572D3F57D232D430738AEEA99BC7A7 /* Pods_BLUIKit_Example.framework */,
+				6CF9F6172C2BD3CC1FCA33CE0F2FEE64 /* SHCHUD.framework */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		CB1253E31D09168252973B669B15937E /* Pods-BLUIKit_Example */ = {
@@ -226,13 +358,19 @@
 			path = "Target Support Files/Pods-BLUIKit_Example";
 			sourceTree = "<group>";
 		};
-		F332CF43DECCF9668577CAFB5ABC06BB /* Products */ = {
+		D0D77575530F93C5AEF91C2CA4EA3DB7 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				AA826EFC39215F4440BC2109DB0AF920 /* BLUIKit.framework */,
-				24DC4C72B6BF7FCBA7CCD5240B960980 /* Pods_BLUIKit_Example.framework */,
+				581050E9D672762634C93462BD2E95FE /* Info.plist */,
+				2E86982A1FCB10CE1D4E70881C2718E7 /* ResourceBundle-Photo-Info.plist */,
+				10145AF44824ED07A3F18DE61460F46E /* SHCHUD.modulemap */,
+				7D693648547B4E9FCEFA428B7281F837 /* SHCHUD.xcconfig */,
+				B8C851A340C03D0B467D08CDE85CED03 /* SHCHUD-dummy.m */,
+				E6BAD6E4D33E4D50259A721819C563AA /* SHCHUD-prefix.pch */,
+				65853A502FCED73A1D56A025F70295C8 /* SHCHUD-umbrella.h */,
 			);
-			name = Products;
+			name = "Support Files";
+			path = "../Target Support Files/SHCHUD";
 			sourceTree = "<group>";
 		};
 		F6ED7CC477101F06942D75E0B41DBABC /* TextInput */ = {
@@ -249,6 +387,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		838335B635A1B7B669C9F8A59F1FF17D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B65CE7EE4DF503EC0F433632EF8E71E6 /* Pods-BLUIKit_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		908EAD6A6AF09994179DCA19810661F0 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -257,17 +403,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CF3DAD10FE1606C3B688CEF068D23CDB /* Headers */ = {
+		B8B000E7ED91E5AFD74DE648FA5754D3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D366AAF4877B86690F5CF69B597A8E64 /* Pods-BLUIKit_Example-umbrella.h in Headers */,
+				BAFA0104C51DB70BAD2A392887834EE6 /* HUD.h in Headers */,
+				3F5FDED3518C8F92D66D90B929797FEA /* SHCHUD-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		3082E084D9CC623934E41E3DB78488AA /* SHCHUD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 695BF55618DF6DD062D13711FA551B86 /* Build configuration list for PBXNativeTarget "SHCHUD" */;
+			buildPhases = (
+				D460F3F15AC6505BA3D12499BFCFC969 /* Sources */,
+				1A0ABB125408FD5F07A862D1831E8027 /* Frameworks */,
+				9459A80A79CAC89E696BBF587C557CBE /* Resources */,
+				B8B000E7ED91E5AFD74DE648FA5754D3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4F6496775DA89FCD3F6952976A4C992B /* PBXTargetDependency */,
+			);
+			name = SHCHUD;
+			productName = SHCHUD;
+			productReference = 6CF9F6172C2BD3CC1FCA33CE0F2FEE64 /* SHCHUD.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		75D1E0EC321BE0C80A814B1E05A1BFAB /* BLUIKit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 52C5B740E7CEC5EC133C7A6708AC68B6 /* Build configuration list for PBXNativeTarget "BLUIKit" */;
@@ -282,25 +448,43 @@
 			);
 			name = BLUIKit;
 			productName = BLUIKit;
-			productReference = AA826EFC39215F4440BC2109DB0AF920 /* BLUIKit.framework */;
+			productReference = 941A57B6A5AD5DA4E895EED550D6A115 /* BLUIKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		9FCA111BDAE5C031C6D5DBA33F9B3F75 /* Pods-BLUIKit_Example */ = {
+		8699FF12FB07E19993B83E0D55C581C2 /* SHCHUD-Photo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A678C08F4CE7341212A1A64154237208 /* Build configuration list for PBXNativeTarget "Pods-BLUIKit_Example" */;
+			buildConfigurationList = 54F4321520839B416635E290CD8AFCF6 /* Build configuration list for PBXNativeTarget "SHCHUD-Photo" */;
 			buildPhases = (
-				4C37A5048317D6633CA5A78F19D8B165 /* Sources */,
-				23BB1B6A684F650A10CC8507BA3BB5F4 /* Frameworks */,
-				CF3DAD10FE1606C3B688CEF068D23CDB /* Headers */,
+				6DC6EE9CA1C8B7CAA33B17977AA58EEA /* Sources */,
+				1AB9E502F0350A3779DA2B8ACBD13842 /* Frameworks */,
+				0C2AC40F38FC92C197DCA2C55865D54B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				453D9050D4D2F31B7F633F6D6FCC417D /* PBXTargetDependency */,
+			);
+			name = "SHCHUD-Photo";
+			productName = "SHCHUD-Photo";
+			productReference = 70B07218DCD1A11E95E2E585C1E2876A /* Photo.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		DBCFDAF1D4E26F54069A82097BDF61E5 /* Pods-BLUIKit_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEBC9E0C6A1E7B67B414A82608EFC6AC /* Build configuration list for PBXNativeTarget "Pods-BLUIKit_Example" */;
+			buildPhases = (
+				3A7F5715C08559DD6785F669096CEE89 /* Sources */,
+				7EEFFBC94B71008BA6AEF4766F0C17AF /* Frameworks */,
+				838335B635A1B7B669C9F8A59F1FF17D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E9CCBE89CCA4CF493B3BEAE151EC173 /* PBXTargetDependency */,
+				71757E4316939C33859A02B4AD82290A /* PBXTargetDependency */,
 			);
 			name = "Pods-BLUIKit_Example";
 			productName = "Pods-BLUIKit_Example";
-			productReference = 24DC4C72B6BF7FCBA7CCD5240B960980 /* Pods_BLUIKit_Example.framework */;
+			productReference = 8A572D3F57D232D430738AEEA99BC7A7 /* Pods_BLUIKit_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -310,7 +494,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 0940;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -320,22 +504,64 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = F332CF43DECCF9668577CAFB5ABC06BB /* Products */;
+			productRefGroup = C4BCDEC11A3A3575398C5E684ED94F74 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				75D1E0EC321BE0C80A814B1E05A1BFAB /* BLUIKit */,
-				9FCA111BDAE5C031C6D5DBA33F9B3F75 /* Pods-BLUIKit_Example */,
+				DBCFDAF1D4E26F54069A82097BDF61E5 /* Pods-BLUIKit_Example */,
+				3082E084D9CC623934E41E3DB78488AA /* SHCHUD */,
+				8699FF12FB07E19993B83E0D55C581C2 /* SHCHUD-Photo */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		0C2AC40F38FC92C197DCA2C55865D54B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A2CF3F0C309A95CB27B8D8A2056FF7C /* angle-mask.png in Resources */,
+				52545968B3732009DA80456C346C0F0A /* angle-mask@2x.png in Resources */,
+				204030FD257B89AF855EA61A7F8D83E3 /* angle-mask@3x.png in Resources */,
+				A812CA06F2E37670F57B419EEBE33A36 /* error.png in Resources */,
+				4E680B47169D16BE51048B7D42A3856A /* error@2x.png in Resources */,
+				38936FEAD914852DB3B9C568F4223C52 /* error@3x.png in Resources */,
+				39A64D9BACBB4D750E752068D24E6C09 /* rotation.png in Resources */,
+				E8D290B13F13739EF6944CE67F6514DE /* rotation@2x.png in Resources */,
+				192F903E133B6310AB212F85DB4C7DFC /* rotation@3x.png in Resources */,
+				8D29822F8B582A1A055EAC14D2D294E1 /* success.png in Resources */,
+				73A096C0EA5384A577B18061E54C6CE4 /* success@2x.png in Resources */,
+				576614C890F9D66448000CDED8FBDE30 /* success@3x.png in Resources */,
+				3053534E1AD516753C788C12C8C02259 /* warning.png in Resources */,
+				DE5D043537CF013A71F155F18C371ECC /* warning@2x.png in Resources */,
+				468129768889BA18D96BE447A89004D3 /* warning@3x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9459A80A79CAC89E696BBF587C557CBE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E4839E888E6487CCA1B5C858A98704A /* Photo.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		4C37A5048317D6633CA5A78F19D8B165 /* Sources */ = {
+		3A7F5715C08559DD6785F669096CEE89 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4ED00A932A62DDAA6E412A52066373E9 /* Pods-BLUIKit_Example-dummy.m in Sources */,
+				C6F7E96767009227FC1899F9E798C022 /* Pods-BLUIKit_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DC6EE9CA1C8B7CAA33B17977AA58EEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,19 +582,73 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D460F3F15AC6505BA3D12499BFCFC969 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94D1202DA57F57B8D747CCE798F0F850 /* HUD.swift in Sources */,
+				5260ACC9B88796C5F266DC760BDF28F4 /* SHCHUD-dummy.m in Sources */,
+				283A9AD66F5FEF42F07A0F817C93C2E5 /* SHCHUD.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		453D9050D4D2F31B7F633F6D6FCC417D /* PBXTargetDependency */ = {
+		2E9CCBE89CCA4CF493B3BEAE151EC173 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = BLUIKit;
 			target = 75D1E0EC321BE0C80A814B1E05A1BFAB /* BLUIKit */;
-			targetProxy = F8C73237C5F73954DA04AFD6415A3F4F /* PBXContainerItemProxy */;
+			targetProxy = F3E13BE3C1019F5E3699B3E1F5D36131 /* PBXContainerItemProxy */;
+		};
+		4F6496775DA89FCD3F6952976A4C992B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SHCHUD-Photo";
+			target = 8699FF12FB07E19993B83E0D55C581C2 /* SHCHUD-Photo */;
+			targetProxy = 8817E5A0E50F5A46A2FE20E47F49F3B9 /* PBXContainerItemProxy */;
+		};
+		71757E4316939C33859A02B4AD82290A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SHCHUD;
+			target = 3082E084D9CC623934E41E3DB78488AA /* SHCHUD */;
+			targetProxy = C90CAE7603694C9A9DB5B1CEE7930120 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		007F983C47EBF9F9A27F74102D001700 /* Debug */ = {
+		4397392C732D7743F39657196C36C39A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 761B16A9D260E86BB31D353A670134AA /* BLUIKit.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/BLUIKit/BLUIKit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BLUIKit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BLUIKit/BLUIKit.modulemap";
+				PRODUCT_MODULE_NAME = BLUIKit;
+				PRODUCT_NAME = BLUIKit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4FFA0220C0B1EAADFE290CC5E5194EE3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5A40A227016B5C521AC63D3494978B39 /* Pods-BLUIKit_Example.debug.xcconfig */;
 			buildSettings = {
@@ -403,7 +683,7 @@
 			};
 			name = Debug;
 		};
-		31CEA7BBC395E3D86D36FE9AD62A063E /* Release */ = {
+		5D28EE457221C59900C97AB173361EC6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C8AB6B3BE76890ED11405BA6D232284B /* Pods-BLUIKit_Example.release.xcconfig */;
 			buildSettings = {
@@ -438,9 +718,9 @@
 			};
 			name = Release;
 		};
-		4397392C732D7743F39657196C36C39A /* Debug */ = {
+		745E8FB04F122601D7F2964C949E1BBE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 761B16A9D260E86BB31D353A670134AA /* BLUIKit.xcconfig */;
+			baseConfigurationReference = 7D693648547B4E9FCEFA428B7281F837 /* SHCHUD.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -451,14 +731,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/BLUIKit/BLUIKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/BLUIKit/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SHCHUD/SHCHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SHCHUD/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/BLUIKit/BLUIKit.modulemap";
-				PRODUCT_MODULE_NAME = BLUIKit;
-				PRODUCT_NAME = BLUIKit;
+				MODULEMAP_FILE = "Target Support Files/SHCHUD/SHCHUD.modulemap";
+				PRODUCT_MODULE_NAME = SHCHUD;
+				PRODUCT_NAME = SHCHUD;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -469,6 +749,22 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		7D631326C1A2BA688C706E45E651789B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D693648547B4E9FCEFA428B7281F837 /* SHCHUD.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SHCHUD";
+				INFOPLIST_FILE = "Target Support Files/SHCHUD/ResourceBundle-Photo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = Photo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
 		};
 		8B33C5230DE4A9DFA6D8F46505DD7AF7 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -533,6 +829,22 @@
 			};
 			name = Debug;
 		};
+		AADF017FA9FBCDB832EFDF54C784A9E8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D693648547B4E9FCEFA428B7281F837 /* SHCHUD.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/SHCHUD";
+				INFOPLIST_FILE = "Target Support Files/SHCHUD/ResourceBundle-Photo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = Photo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
 		B42B54097A876E8A982CBF5DAA91B1AB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -587,6 +899,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
@@ -624,6 +937,39 @@
 			};
 			name = Release;
 		};
+		CC0087D017A45A772CC4991B59B9AA59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D693648547B4E9FCEFA428B7281F837 /* SHCHUD.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SHCHUD/SHCHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SHCHUD/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SHCHUD/SHCHUD.modulemap";
+				PRODUCT_MODULE_NAME = SHCHUD;
+				PRODUCT_NAME = SHCHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -645,11 +991,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A678C08F4CE7341212A1A64154237208 /* Build configuration list for PBXNativeTarget "Pods-BLUIKit_Example" */ = {
+		54F4321520839B416635E290CD8AFCF6 /* Build configuration list for PBXNativeTarget "SHCHUD-Photo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				007F983C47EBF9F9A27F74102D001700 /* Debug */,
-				31CEA7BBC395E3D86D36FE9AD62A063E /* Release */,
+				AADF017FA9FBCDB832EFDF54C784A9E8 /* Debug */,
+				7D631326C1A2BA688C706E45E651789B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		695BF55618DF6DD062D13711FA551B86 /* Build configuration list for PBXNativeTarget "SHCHUD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				745E8FB04F122601D7F2964C949E1BBE /* Debug */,
+				CC0087D017A45A772CC4991B59B9AA59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEBC9E0C6A1E7B67B414A82608EFC6AC /* Build configuration list for PBXNativeTarget "Pods-BLUIKit_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FFA0220C0B1EAADFE290CC5E5194EE3 /* Debug */,
+				5D28EE457221C59900C97AB173361EC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

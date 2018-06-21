@@ -8,14 +8,17 @@
 import UIKit
 
 public class SearchBar: UISearchBar,TextInputProtocol {
-  /// 文字过滤与转换
-  public var filters: [TextInputFilter] = []
-  /// 判断输入是否合法的
-  public var matchs: [TextInputMatch] = []
   /// 字数限制
-  public var wordLimit: Int = Int.max
+  public var wordLimit: Int = TextInputConfig.wordLimit
+  /// 文字超出字符限制执行
+  public var overWordLimitEvent: ((String) -> ())? = TextInputConfig.overWordLimitEvent
+  /// 文字过滤与转换
+  public var filters: [TextInputFilter] = TextInputConfig.filters
+  /// 判断输入是否合法的
+  public var matchs: [TextInputMatch] = TextInputConfig.matchs
   /// 菜单禁用项
-  public var disables: [TextInputDisableState] = []
+  public var disables: [TextInputDisableState] = TextInputConfig.disables
+  
   /// 设置占位文本偏移
   public var placeholderEdgeInsets: UIEdgeInsets = .zero
   
@@ -57,10 +60,6 @@ public class SearchBar: UISearchBar,TextInputProtocol {
     return false
   }
   
-  public func textInput(overWordLimit text: String) {
-    
-  }
-  
 }
 
 /// MARK: - Config
@@ -68,9 +67,6 @@ extension SearchBar{
   
   func buildConfig() {
     delegate = nil
-    matchs = TextInputConfig.matchs
-    filters = TextInputConfig.filters
-    disables = TextInputConfig.disables
   }
   
 }
